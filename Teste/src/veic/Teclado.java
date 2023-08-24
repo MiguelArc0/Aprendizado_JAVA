@@ -18,16 +18,13 @@ public class Teclado {
     }
     public void escrever(){
     System.out.println("Parabéns o teclado está funcionando");
-    return true;
     }
     public void escrever_ola(){
-    System.out.println("Olá");
-    return true; 
+    System.out.println("Olá"); 
     }
     
     public void escrever_bomdia(){
     System.out.println("Olá, Bom dia!!!");
-    return true;
     }
 
     public String getCor() {
