@@ -30,6 +30,13 @@ public class Teste {
         t1.setTeclas(125);
 
         System.out.println("A cor do teclado: " + t1.getCor() + "\nA quantidade de teclas do teclado: " + t1.getTeclas() +"\nEstá funcionado: " + t1.isFuncionando());
+
+        Teclado tec = new Teclado("Preto",12,true);
+        tec.especificacaoTeclado();
+        System.out.println("\nTeste se está funcionando\n");
+        tec.escrever();
+        System.out.println("Mensagem bonita! \n");
+        tec.escrever_bomdia();
     }
     static void comp(){
         Computador comp1 = new Computador("Preto",123,true);
