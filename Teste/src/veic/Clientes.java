@@ -15,6 +15,12 @@ public class Clientes {
     public void mostrar(){
         System.out.println("Nome do cliente: " + nome + "\nEndereço do cliente: " + endereco + "\nNº de telefone: " + numeroTelefone);
     }
+    public void nome_alterado(){
+         System.out.println("Nome diferente: " + nome + "Arnaldo");   
+    }
+    public boolean existe(){
+        return true;
+    }
 
     public String getNome() {
         return nome;
