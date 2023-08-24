@@ -26,6 +26,14 @@ public class Teste {
         System.out.println("\nA Cor da bike: " + b1.getCor() + "\nO número de aros: " + b1.getAro() + "\nTrue ou false: " + b1.isCesta());
     }
     static void tec(){
+        Teclado t1 = new Teclado("Preto",123,true);
+        t1.setCor("Rosa");
+        t1.setTeclas(125);
 
+        System.out.println("A cor do teclado: " + t1.getCor() + "\nA quantidade de teclas do teclado: " + t1.getTeclas() +"\nEstá funcionado: " + t1.isFuncionando());
     }
+
+
+
+
 }

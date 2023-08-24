@@ -25,4 +25,11 @@ public class Teclado {
         return funcionando;
     }
 
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+
+    public void setTeclas(double teclas) {
+        this.teclas = teclas;
+    }
 }
