@@ -16,6 +16,19 @@ public class Teclado {
         this.teclas = teclas;
         this.funcionando = funcionando;
     }
+    public void escrever(){
+    System.out.println("Parabéns o teclado está funcionando");
+    return true;
+    }
+    public void escrever_ola(){
+    System.out.println("Olá");
+    return true; 
+    }
+    
+    public void escrever_bomdia(){
+    System.out.println("Olá, Bom dia!!!");
+    return true;
+    }
 
     public String getCor() {
         return cor;
