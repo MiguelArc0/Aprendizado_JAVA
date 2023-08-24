@@ -8,7 +8,9 @@ public class Teclado {
 
     private boolean funcionando;
 
-
+    public boolean digitar(){
+        return true;
+    }
     public Teclado(String cor, double teclas, boolean funcionando){
         this.cor = cor;
         this.teclas = teclas;
