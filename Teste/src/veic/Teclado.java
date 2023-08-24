@@ -19,8 +19,8 @@ public class Teclado {
     public void escrever(){
     System.out.println("Parabéns o teclado está funcionando");
     }
-    public void escrever_ola(){
-    System.out.println("Olá"); 
+    public void especificacaoTeclado(){
+    System.out.println("Olá, seu teclado tem a cor: " + cor + "\nQtd teclas: " + teclas +"\nEstá funcionando? -> " + funcionando); 
     }
     
     public void escrever_bomdia(){
