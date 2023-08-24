@@ -32,6 +32,13 @@ public class Teste {
 
         System.out.println("A cor do teclado: " + t1.getCor() + "\nA quantidade de teclas do teclado: " + t1.getTeclas() +"\nEstá funcionado: " + t1.isFuncionando());
     }
+    static void comp(){
+        Computador comp1 = new Computador("Preto",123,true);
+        comp1.setCor("Rosa");
+        comp1.setTeclas(125);
+
+        System.out.println("A cor do teclado: " + comp1.getCor() + "\nA quantidade de teclas do teclado: " + comp1.getTeclas() +"\nEstá funcionado: " + comp1.isFunciona());
+    }
 
 
 
