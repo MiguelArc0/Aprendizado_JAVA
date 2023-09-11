@@ -16,6 +16,12 @@ public class Banco {
     public void evideniar(){
         System.out.println("Nome do banco: " + getNome() + "\nLocalização: " + getLocalizacao() + "QTD clientes: " + getClientes());
     }
+    public void mostrarClientes(){
+        System.out.println(" A quantidade de clientes: " + getClientes() + "\nDo banco: " + getNome());
+    }
+    public void mostraNome (){
+        System.out.println("O nome do banco: " + getNome());
+    }
 
     public String getNome() {
         return nome;
