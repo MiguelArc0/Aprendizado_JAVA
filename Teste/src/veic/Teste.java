@@ -23,6 +23,8 @@ public class Teste {
         b1.setAro(123);
 
         System.out.println("\nA Cor da bike: " + b1.getCor() + "\nO número de aros: " + b1.getAro() + "\nTrue ou false: " + b1.isCesta());
+
+        b1.Andar();
     }
     static void tec(){
         Teclado t1 = new Teclado("Preto",123,true);
