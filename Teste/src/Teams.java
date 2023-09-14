@@ -4,6 +4,39 @@ public class Teams {
     public static void main(String[] args) {
     ex86();
     }
+
+        static void ex77(){
+        int[] exV = {5,1,4,2,7,8,3,6};
+        for (int i = 8;i >= 5; i --){
+            int aux = exV[i];
+            exV[i] = exV[7-i + 1];
+            exV[7-i + 1] = aux;
+        }
+        exV[2] = exV[1];
+        exV[exV[2]] = exV[exV[1]];
+
+        System.out.println(Arrays.toString(exV));
+    }
+    static void ex78(){
+        Scanner sc = new Scanner(System.in);
+        ArrayList<String> pessoas = new ArrayList<>();
+        for(int i = 0;i < 5 ;i++){
+            System.out.println("Insira o nome da pessoa "+ (i+1)+"º");
+            pessoas.add (sc.next());
+        }
+        System.out.println("Insira mais um nome: ");
+        String nome = sc.next();
+        pessoas.add(nome);
+        for(int i = 0;i < 5 ;i++){
+            if(nome.equals(pessoas.get(i))){
+                System.out.println("O nome na posição: " + (i+1) + " = "+pessoas.get(i)+" é igual ao nome fornecido, o nome é: " + nome);
+            }
+        }
+
+
+    }
+
+    
     static void ex86(){
         Scanner sc = new Scanner(System.in);
         int[] vetorD = new int[9];
