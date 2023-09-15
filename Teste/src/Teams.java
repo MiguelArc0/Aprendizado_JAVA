@@ -57,7 +57,29 @@ public class Teams {
         System.out.println("Vezes em que a nota de algum aluno foi maior que a média: " + maior_que_A_media);
     }
 
-    
+        static void ex80ArraySimples(){
+        int[] notas = new int[5];
+        Scanner sc = new Scanner(System.in);
+        double arma_media = 0;
+        double media = 0;
+        for(int i = 0; i < notas.length; i ++ ){
+            System.out.println("Insira os números: ");
+            notas[i] = sc.nextInt();
+            arma_media += notas[i];
+        }
+        media = arma_media / notas.length;
+        int maior = notas[0];
+        for(int i = 0; i < notas.length; i ++ ){
+            if(maior < notas[i]){
+                maior = notas[i];
+            }
+        }
+        System.out.println("O Aarray: " + Arrays.toString(notas));
+        System.out.println("A média das notas: " + media);
+        System.out.println("A maior das notas: " + maior);
+
+
+    }
 
     
     static void ex86(){
