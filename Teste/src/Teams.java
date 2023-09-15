@@ -69,14 +69,20 @@ public class Teams {
         }
         media = arma_media / notas.length;
         int maior = notas[0];
+        int pos = 0;
         for(int i = 0; i < notas.length; i ++ ){
             if(maior < notas[i]){
                 maior = notas[i];
+                pos = (i+1);
+            }
+            else{
+                pos = (i+1);
             }
         }
         System.out.println("O Aarray: " + Arrays.toString(notas));
         System.out.println("A média das notas: " + media);
         System.out.println("A maior das notas: " + maior);
+        System.out.println("A posição do Maior é o número " + pos +" na lista");
 
 
     }
