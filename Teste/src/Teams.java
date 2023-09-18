@@ -312,4 +312,24 @@ static void ex87(){
 
 
     }
+                
+        static void ex90ArraySimples() {
+        int[] notas = new int[5];
+        Scanner sc = new Scanner(System.in);
+        for (int i = 0; i < notas.length; i++) {
+            System.out.println("Insira os números: ");
+            notas[i] = sc.nextInt();
+        }
+        int existe = 0;
+        System.out.println("Insira mais um número: ");
+        int maisum = sc.nextInt();
+        for (int i = 0; i < notas.length; i++) {
+            if (maisum == notas[i]) {
+                existe += 1;
+            }
+        }
+
+        System.out.println("A quantidade de vezes em que o número digitado aparece no array é: " + existe);
+    }
+
 }
