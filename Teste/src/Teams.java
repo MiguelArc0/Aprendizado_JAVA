@@ -332,4 +332,23 @@ static void ex87(){
         System.out.println("A quantidade de vezes em que o número digitado aparece no array é: " + existe);
     }
 
+
+        static void ex91ArraySimples() {
+        int[] notas = new int[5];
+        Scanner sc = new Scanner(System.in);
+        for (int i = 0; i < notas.length; i++) {
+            System.out.println("Insira os números: ");
+            notas[i] = sc.nextInt();
+        }
+        int mesmo = 0;
+        for (int i = 0; i < notas.length; i++) {
+            for(int j = i + 1; j < notas.length; j++){
+                if(notas[i] == notas[j]){
+                    mesmo += 1;
+                    System.out.println("O número: " + notas[i] + " está repetido na posição: " + (i+1) + " e na posição: " + (j+1));
+                }
+            }
+        }
+    }
+
 }
